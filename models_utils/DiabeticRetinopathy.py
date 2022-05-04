@@ -10,8 +10,8 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
-class Dr_Model:
-    def DrPredict(self):
+class DiabeticRetinopathy_Model:
+    def DiabeticRetinopathy_Predict(self):
         option = st.radio('',
                               ['Textual Explanation', 'Model', 'Visual Explanation'])
         st.write(

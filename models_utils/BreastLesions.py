@@ -10,8 +10,8 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
-class Blt_Model:
-    def BltPredict(self):
+class BreastLesions_Model:
+    def BreastLesions_Predict(self):
         def import_and_predict(image_data, model):
 
             size = (256, 256)

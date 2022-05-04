@@ -10,14 +10,14 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
-from models_code import DR,SC,PCX,BTM,BLT,KOX
+from models_utils import BrainTumorMRI, DiabeticRetinopathy,BreastLesions, KneeOsteoarthritisXray, PneumoniaChestXray, SkinCancer
 
-DR_code=DR.Dr_Model()
-SC_code=SC.Sc_Model()
-PCX_code=PCX.Pcx_Model()
-BTM_code=BTM.Btm_Model()
-BLT_code=BLT.Blt_Model()
-KOX_code=KOX.Kox_Model()
+DR=DiabeticRetinopathy.DiabeticRetinopathy_Model()
+SC=SkinCancer.SkinCancer_Model()
+PCX=PneumoniaChestXray.PneumoniaChestXray_Model()
+BTM=BrainTumorMRI.BrainTumorMRI_Model()
+BLT=BreastLesions.BreastLesions_Model()
+KOX=KneeOsteoarthritisXray.KneeOsteoarthritisXray_Model()
 
 class model_predict:
     def predict(self):
@@ -53,14 +53,14 @@ class model_predict:
 
         if diagnose == 'Diabetic-Retinopathy':
 
-            DR_code.DrPredict()
+            DR.DiabeticRetinopathy_Predict()
         #################
         ## Skin-Cancer ##
         #################
 
         if diagnose == "Skin-Cancer":
 
-            SC_code.ScpPredict()
+            SC.SkinCancer_Predict()
 
         ###########################
         ## Pneumonia-Chest-XRAY ###
@@ -68,7 +68,7 @@ class model_predict:
 
         if diagnose == "Pneumonia-Chest-XRAY":
 
-           PCX_code.PcxPredict()
+           PCX.PneumoniaChestXray_Predict()
 
         #####################
         ## Brain-Tumor-MRI ##
@@ -76,7 +76,7 @@ class model_predict:
 
         if diagnose == "Brain-Tumor-MRI":
 
-            BTM_code.BtmPredict()
+            BTM.BrainTumorMRI_Predict()
 
         #################################
         ## Breast-Lesions-Tumor-Cancer ##
@@ -84,7 +84,7 @@ class model_predict:
 
         if diagnose == 'Breast-Lesions-Tumor-Cancer':
 
-            BLT_code.BltPredict()
+            BLT.BreastLesions_Predict()
 
         ##############################
         ## Knee-Osteoarthritis-XRAY ##
@@ -92,4 +92,4 @@ class model_predict:
 
         if diagnose == 'Knee-Osteoarthritis-XRAY':
 
-            KOX_code.KoxPredict()
+            KOX.KneeOsteoarthritisXray_Predict()

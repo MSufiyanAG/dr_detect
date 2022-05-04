@@ -99,7 +99,7 @@ def main():
     st.sidebar.write("----------------------------")
 
     if st.sidebar.button('GITHUB Link'):
-        js = "window.open('https://www.google.co.in/')"
+        js = "window.open('https://github.com/MSufiyanAG/dr_detect')"
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
