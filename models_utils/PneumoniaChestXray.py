@@ -10,8 +10,8 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
-class Pcx_Model:
-    def PcxPredict(self):
+class PneumoniaChestXray_Model:
+    def PneumoniaChestXray_Predict(self):
         def import_and_predict_chest(image_data, model):
 
             size = (150, 150)

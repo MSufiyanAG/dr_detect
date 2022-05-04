@@ -11,8 +11,8 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
-class Sc_Model:
-    def ScpPredict(self):
+class SkinCancer_Model:
+    def SkinCancer_Predict(self):
         option = st.radio('',
                               ['Textual Explanation', 'Model', 'Visual Explanation'])
         st.write(

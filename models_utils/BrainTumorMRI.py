@@ -9,8 +9,8 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
-class Btm_Model:
-    def BtmPredict(self):
+class BrainTumorMRI_Model:
+    def BrainTumorMRI_Predict(self):
         option = st.radio('',
                               ['Textual Explanation', 'Model', 'Visual Explanation'])
         st.write(
