@@ -97,12 +97,15 @@ def main():
                 ''')
 
     st.sidebar.write("----------------------------")
-
-    if st.sidebar.button('GITHUB Link'):
-        js = "window.open('https://github.com/MSufiyanAG/dr_detect')"
-        html = '<img src onerror="{}">'.format(js)
-        div = Div(text=html)
-        st.bokeh_chart(div)
+    st.sidebar.write(f'''
+    <a target="_self" href="https://github.com/MSufiyanAG/dr_detect">
+        <button>
+            GitHub
+        </button>
+    </a>
+    ''',
+    unsafe_allow_html=True
+)
 
     if choice == "[-About-]":
 
