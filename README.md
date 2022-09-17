@@ -1,4 +1,3 @@
-# dr_detect
-dr_detect
+# Dr. Detect
 
 ## [Link](https://drdetects.herokuapp.com/)
